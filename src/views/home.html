@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="w-full mx-auto mt-10 pt-10 container">
+  <div class="bg-white shadow-md rounded px-8 pt-6">
+    <p class="text-sm inline-block">
+      To complete this step you need a <strong>consumer key</strong>,
+      get one using <a href="https://getpocket.com/developer/docs/authentication">the Pocket Authentication Guide</a>.
+    </p>
+    <form
+      class="pt-6 pb-8 mb-4"
+      action="/addConsumerKey"
+      method="post"
+    >
+      <div class="mb-4">
+        <label class="block text-grey-darker text-sm font-bold mb-2" for="consumer_key">
+          Consumer key
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+          id="consumer_key"
+          name="consumer_key"
+          type="text"
+          required="required"
+          placeholder="1234-abcd1234abcd1234abcd1234">
+      </div>
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-red hover:bg-red-dark text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="submit"
+        >
+          Next
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+{% endblock %}
