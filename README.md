@@ -1,6 +1,6 @@
-# Poket token creator
+# Express Nunjucks TailwindCSS 
 
-> A lightweight OAuth integration with the Pocket API
+> A starter project with Express, Nunjucks and TailwindCSS
 
 ## Setup
 
@@ -17,15 +17,17 @@ It binds the application server to `localhost:3000`, this can be re-mapped this 
 The default Docker `CMD` is `npm start`, [./docker-compose.yaml](./docker-compose.yaml) overrides this to `npm run dev` which runs the application using nodemon (auto-restart on file change).
 
 
-## Express API setup
+## Express setup
 
-The Express API is located in [./src/api](./src/api).
+The Express "page" resources are located in [./src/pages](./src/pages).
 
-Applications routes for resources are defined in [./src/api/index.js](./src/api/index.js).
+Their corresponding Nunjucks templates are in [./src/views](./src/views).
+
+Applications routes for pages are defined in [./src/router.js](./src/router.js).
 
 Global concerns like security, cookie parsing, body parsing and request logging are handled in [./server.js](./server.js).
 
 This application loosely follows the [Presentation Domain Data Layering](https://www.martinfowler.com/bliki/PresentationDomainDataLayering.html):
 
-- Presentation is dealt with in the `./src/api` folder
+- Data Presentation is dealt with in the `./src/pages` folder
 - Domain is dealt with in the `./src/modules` folder.
