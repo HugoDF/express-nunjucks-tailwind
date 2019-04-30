@@ -8,12 +8,12 @@
     "test": "xo",
     "lint": "xo",
     "format": "xo --fix",
-    "prestart": "npm run build",
+    "prestart": "yarn build",
     "start": "node ./bin/start.js",
     "dev": "nodemon ./bin/start.js",
     "tw": "tailwind build src/styles/app.css -o public/app.css -c tailwind.js --no-autoprefixer",
     "purge": "purgecss --css ./public/app.css -o ./public --content src/views/**/*.html",
-    "build": "npm run tw && npm run purge"
+    "build": "yarn tw && yarn purge"
   },
   "keywords": [
     "express",
