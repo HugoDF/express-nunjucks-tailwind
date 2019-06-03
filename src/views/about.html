@@ -1,27 +1,15 @@
 {% extends "layout.html" %}
 
-{% block title %}Success - Pocket Access Token{% endblock %}
-{% block description %}Successful Pocket Access Token{% endblock %}
+{% block title %}About - Express Nunjucks Tailwind CSS{% endblock %}
+{% block description %}About - Express Nunjucks Tailwind CSS{% endblock %}
 
 {% block content %}
 <section class="w-full mx-auto mt-10 pt-10 container">
-  <div class="bg-white shadow-md rounded px-8 pt-6 mb-4">
-    <h2 class="text-xl mb-4">Success!</h2>
-    <p class="text-md mb-6">
-      This is your Pocket access token: <code>{{ accessToken }}</code>
+  <div class="bg-white shadow-md rounded px-8 pt-6 pb-6 mb-4">
+    <h2 class="text-xl mb-4">About</h2>
+    <p class="text-md">
+      Node.js Starter Project with Express, Nunjucks and Tailwind CSS.
     </p>
-    <section>
-      <h3 class="text-md mb-4">Use it with a sample request</h3>
-      <pre><code>curl --request GET \
-  --url https://getpocket.com/v3/get \
-  --header 'content-type: application/json' \
-  --data '{
-  "consumer_key": "{{ consumerKey }}",
-  "access_token": "{{ accessToken}}",
-  "count": 10
-}'</code>
-      </pre>
-    </section>
   </div>
 </section>
 {% endblock %}
