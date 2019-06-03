@@ -10,6 +10,7 @@
     "format": "xo --fix",
     "prestart": "yarn build",
     "start": "node ./bin/start.js",
+    "predev": "yarn tw",
     "dev": "nodemon ./bin/start.js",
     "tw": "tailwind build src/styles/app.css -o public/app.css -c tailwind.js --no-autoprefixer",
     "purge": "purgecss --css ./public/app.css -o ./public --content src/views/**/*.html",
@@ -28,13 +29,12 @@
     "express": "^4.16.4",
     "helmet": "^3.16.0",
     "morgan": "^1.9.1",
-    "nunjucks": "^3.2.0",
-    "purgecss": "^1.3.0"
+    "nunjucks": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.11",
-    "tailwindcss": "^0.7.4",
     "purgecss": "^1.3.0",
+    "tailwindcss": "^0.7.4",
     "xo": "^0.24.0"
   },
   "xo": {
