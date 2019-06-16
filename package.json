@@ -13,7 +13,7 @@
     "predev": "yarn tw",
     "dev": "nodemon ./bin/start.js",
     "tw": "tailwind build src/styles/app.css -o public/app.css",
-    "purge": "purgecss --css ./public/app.css -o ./public --content src/views/**/*.html",
+    "purge": "purgecss -c purgecss.config.js -o ./public",
     "build": "yarn tw && yarn purge"
   },
   "keywords": [

@@ -1,6 +1,6 @@
 module.exports = {
-  content: ['public/index.html'],
-  css: ['public/styles.css'],
+  content: ['src/views/**/*.html'],
+  css: ['public/app.css'],
   extractors: [
     {
       extractor: {
