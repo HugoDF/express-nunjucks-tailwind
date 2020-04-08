@@ -4,7 +4,7 @@ module.exports = {
   extractors: [
     {
       extractor: {
-        extract: content => content.match(/[A-z0-9-:/]+/g)
+        extract: (content) => content.match(/[A-z\d-:/]+/g)
       },
       extensions: ['html']
     }
