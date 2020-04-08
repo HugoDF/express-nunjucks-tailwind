@@ -3,9 +3,7 @@ module.exports = {
   css: ['public/app.css'],
   extractors: [
     {
-      extractor: {
-        extract: (content) => content.match(/[A-z\d-:/]+/g)
-      },
+      extractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
       extensions: ['html']
     }
   ]
