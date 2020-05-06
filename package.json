@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.3",
-    "purgecss": "^2.1.2",
+    "purgecss": "^2.2.1",
     "tailwindcss": "^1.4",
     "xo": "^0.30.0"
   },
