@@ -35,7 +35,7 @@
     "nodemon": "^2.0.4",
     "purgecss": "^2.2.1",
     "tailwindcss": "^1.4",
-    "xo": "^0.30.0"
+    "xo": "^0.32.0"
   },
   "xo": {
     "prettier": true,
