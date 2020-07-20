@@ -29,7 +29,7 @@
     "express": "^4.17.1",
     "helmet": "^3.23.3",
     "morgan": "^1.10.0",
-    "nunjucks": "^3.2.1"
+    "nunjucks": "^3.2.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
