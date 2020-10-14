@@ -32,7 +32,7 @@
     "nunjucks": "^3.2.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.5",
     "purgecss": "^3.0.0",
     "tailwindcss": "^1.8",
     "xo": "^0.33.1"
